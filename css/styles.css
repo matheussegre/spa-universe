@@ -1,0 +1,117 @@
+:root {
+  font-size: clamp(40%, 2vw + 1%, 62.5%);
+  --base-text: hsla(240, 9%, 89%, 1);
+  --hover-text: hsla(0, 0%, 100%, 1);
+  --hover-button: hsla(194, 97%, 31%, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+html {
+  background: url(../src/assets/mountains-universe-1.png) no-repeat center/cover;
+  background-size: cover;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  color: var(--base-text);
+}
+body.home #app {
+  display: grid;
+  place-content: center;
+  place-items: center;
+}
+body.universe {
+  background: url(../src/assets/mountains-universe02.png) no-repeat center/cover;
+  background-size: cover;
+}
+body.universe #app .info {
+  width: 72rem;
+  padding-top: 6.3rem;
+  padding-left: 10.2rem;
+}
+body.universe #app .info p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 160%;
+}
+body.exploration {
+  background: url(../src/assets/mountains-universe-3.png) no-repeat center/cover;
+  background-size: cover;
+}
+body.exploration #app .info {
+  width: 72rem;
+  padding-top: 6.3rem;
+  padding-left: 10.2rem;
+}
+body.exploration #app .info p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+nav {
+  font-size: 2.1rem;
+  line-height: 2.1rem;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-left: 7.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+a {
+  all: unset;
+}
+a:hover {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--hover-text);
+}
+
+h1 {
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 125%;
+  margin-bottom: 2.4rem;
+}
+
+p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+#buttonUniverse {
+  cursor: pointer;
+  padding: 1.2rem 3.2rem;
+  border: 2px solid var(--hover-text);
+  border-radius: 0.5rem;
+  color: var(--hover-text);
+  background-color: transparent;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+}
+#buttonUniverse:hover {
+  color: var(--hover-button);
+  background-color: white;
+}
+
+#app {
+  width: 100vw;
+  height: 65vh;
+}/*# sourceMappingURL=styles.css.map */
